@@ -12,4 +12,5 @@ Feature: Login
     Quando estiver atendendo um evento
     Então acessará a modal para consultar um convite
   
-  
+  Feature: Login2
+    
