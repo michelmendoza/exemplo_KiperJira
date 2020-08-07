@@ -1,13 +1,15 @@
 Feature: Login
+ 
+    A fim de consultar um convite ou convidado
+    Como Operador
+    Eu quero encontrar um convite ou convidado específico
+    Assim que realizar a consulta na modal
 
-  I want to sign in
+  Scenario: Consultar um convite
 
-  Scenario: excluir dados de acesso de usuário com vários cadastrados
-    Dado que eu tenho mais de um dados de acesso de usuário
-    Quando eu clico no ícone lixeira
-    Então a seção de dados de acesso de usuário é excluída
-    E mostra um loader
-    E mostra uma mensagem de excluído com sucesso"
-  
+    Dado que o operador esteja logado no Kiper Monitoring
+    E possua permissão ao acesso a tela de monitoramento
+    Quando estiver atendendo um evento
+    Então acessará a modal para consultar um convite
   
   
