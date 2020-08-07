@@ -2,12 +2,12 @@ Feature: Login
 
   I want to sign in
 
-  Scenario: Sign in
-    Given I access monitoring page
-    Then I type my email on input "email"
-    Then I click on "Entrar"
-    Then I type my password on input "password"
-    Then I click on "Entrar"
+  Scenario: excluir dados de acesso de usuário com vários cadastrados
+    Dado que eu tenho mais de um dados de acesso de usuário
+    Quando eu clico no ícone lixeira
+    Então a seção de dados de acesso de usuário é excluída
+    E mostra um loader
+    E mostra uma mensagem de excluído com sucesso"
   
   
   
